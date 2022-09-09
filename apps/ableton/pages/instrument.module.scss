@@ -17,6 +17,7 @@
 
   ul {
     flex: 1 1 33.33%;
+
     &:nth-child(1) li {
       &:nth-child(2) {
         animation-delay: 2s;
@@ -28,6 +29,7 @@
         animation-delay: 6s;
       }
     }
+
     &:nth-child(2) li {
       animation-delay: 0.2s;
       &:nth-child(2) {
@@ -40,6 +42,7 @@
         animation-delay: 6.2s;
       }
     }
+
     &:nth-child(3) li {
       animation-delay: 0.4s;
       &:nth-child(2) {

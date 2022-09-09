@@ -17,6 +17,41 @@
 
   ul {
     flex: 1 1 33.33%;
+    &:nth-child(1) li {
+      &:nth-child(2) {
+        animation-delay: 2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 4s;
+      }
+      &:nth-child(4) {
+        animation-delay: 6s;
+      }
+    }
+    &:nth-child(2) li {
+      animation-delay: 0.2s;
+      &:nth-child(2) {
+        animation-delay: 2.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 4.2s;
+      }
+      &:nth-child(4) {
+        animation-delay: 6.2s;
+      }
+    }
+    &:nth-child(3) li {
+      animation-delay: 0.4s;
+      &:nth-child(2) {
+        animation-delay: 2.4s;
+      }
+      &:nth-child(3) {
+        animation-delay: 4.4s;
+      }
+      &:nth-child(4) {
+        animation-delay: 6.4s;
+      }
+    }
   }
   ul > li {
     position: absolute;
@@ -24,15 +59,6 @@
     font-size: 2rem;
     animation: fadein_out 8s ease-in-out infinite;
 
-    &:nth-child(2) {
-      animation-delay: 2s;
-    }
-    &:nth-child(3) {
-      animation-delay: 4s;
-    }
-    &:nth-child(4) {
-      animation-delay: 6s;
-    }
     // position: absolute;
   }
 }

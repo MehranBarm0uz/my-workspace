@@ -1,0 +1,66 @@
+.main {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(24, 24, 24);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 20rem;
+  background-color: #fff;
+
+  ul {
+    flex: 1 1 33.33%;
+  }
+  ul > li {
+    position: absolute;
+    opacity: 0;
+    font-size: 2rem;
+    animation: fadein_out 8s ease-in-out infinite;
+
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 4s;
+    }
+    &:nth-child(4) {
+      animation-delay: 6s;
+    }
+    // position: absolute;
+  }
+}
+
+@keyframes fadein_out {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  35% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    animation-play-state: paused;
+  }
+  100% {
+    animation-play-state: running;
+  }
+}

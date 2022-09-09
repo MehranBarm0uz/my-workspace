@@ -1,2 +1,143 @@
+.bg {
+  width: 100%;
+  background: #f3f3f3;
+}
 .page {
+  height: 100vh;
+  max-width: 160rem;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+.header {
+  position: relative;
+}
+.nav {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  ul {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  li,
+  a {
+    cursor: pointer;
+    margin: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    &:is(:focus) {
+      color: #ff764d;
+    }
+  }
+  li:last-child {
+    color: #ff764d;
+  }
+}
+.login_buttons {
+  margin-right: 3rem;
+  a {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    font-weight: 500;
+    &:nth-child(1) {
+      color: blue;
+      font-weight: 700;
+    }
+  }
+}
+
+.logo {
+  margin: 2rem;
+  svg {
+    width: 6.5rem;
+  }
+}
+
+/*  Nav More */
+
+.nav_more,
+.hide_nav {
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  h1 {
+    padding: 2rem 0 0 3.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  ul {
+    display: flex;
+    padding: 2rem;
+    a {
+      padding: 0 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.nav_more {
+  animation: nav_more 1.2s ease-in-out forwards;
+  margin-bottom: 72.896px;
+  transition: 1.2s;
+}
+
+.hide_nav {
+  animation: navbar_hide 0.7s ease-in-out forwards;
+  transition: 0.7s;
+}
+.section_one {
+  position: relative;
+  & > .img_wrapper {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    right: 10rem;
+  }
+}
+.collage {
+  background-color: #b6ffc0;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  // height: 700px;
+  align-items: flex-start;
+}
+
+.img_wrapper {
+  box-sizing: content-box;
+  padding: 7rem 0rem 7rem 15rem;
+  &:first-child {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes nav_more {
+  0% {
+    height: 72.896px;
+    transform: translateY(-100vh);
+  }
+  100% {
+    height: 400px;
+    transform: translateY(72.896px);
+  }
+}
+
+@keyframes navbar_hide {
+  0% {
+    height: 400px;
+    transform: translateY(72.896px);
+  }
+  100% {
+    height: 72.896px;
+    transform: translateY(-100vh);
+  }
 }

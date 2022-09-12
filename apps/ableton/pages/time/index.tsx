@@ -26,31 +26,31 @@ const time = () => {
           </div>
           <div className={styles.card1}>
             <div className={styles.card1_svg}>
-              <img src="/TimeIcons/icon-work.svg" alt="" />
+              <img src="/TimeIcons/icon-play.svg" alt="" />
             </div>
             <div className={styles.card1_time}></div>
           </div>
           <div className={styles.card1}>
             <div className={styles.card1_svg}>
-              <img src="/TimeIcons/icon-work.svg" alt="" />
+              <img src="/TimeIcons/icon-study.svg" alt="" />
             </div>
             <div className={styles.card1_time}></div>
           </div>
           <div className={styles.card1}>
             <div className={styles.card1_svg}>
-              <img src="/TimeIcons/icon-work.svg" alt="" />
+              <img src="/TimeIcons/icon-exercise.svg" alt="" />
             </div>
             <div className={styles.card1_time}></div>
           </div>
           <div className={styles.card1}>
             <div className={styles.card1_svg}>
-              <img src="/TimeIcons/icon-work.svg" alt="" />
+              <img src="/TimeIcons/icon-social.svg" alt="" />
             </div>
             <div className={styles.card1_time}></div>
           </div>
           <div className={styles.card1}>
             <div className={styles.card1_svg}>
-              <img src="/TimeIcons/icon-work.svg" alt="" />
+              <img src="/TimeIcons/icon-self-care.svg" alt="" />
             </div>
             <div className={styles.card1_time}></div>
           </div>

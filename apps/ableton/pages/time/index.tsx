@@ -7,7 +7,12 @@ const time = () => {
       <section className={styles.container}>
         <div className={styles.user_profile}>
           <div className={styles.user_details}>
-            <img src="/TimeImages/image-jeremy.png " alt="" />
+            <span></span>
+            <span></span>
+            <div className={styles.image_box}>
+              <img src="/TimeImages/image-jeremy.png " alt="" />
+            </div>
+
             <p>Report for</p>
             <h2>
               Jeremy <br /> Robson
